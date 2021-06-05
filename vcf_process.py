@@ -32,13 +32,13 @@ def vcf_annot(args):
     headers=['chrom','pos','id','ref','alt','type','depth','alt_reads','alt_reads_percentage','ref_reads_percentage',\
              'allele_freq','symbol','major_consequence','gene_id_ens']
              
-	#Initiate dataframe
+    #Initiate dataframe
     annot_df=pd.DataFrame(columns=headers)
     
     try:
         vcf_input=open(args.v,'r')
             
-    # If file not found, exit script
+    #If file not found, exit script
     except FileNotFoundError:
         print ("File not found. Check file name and path.")
         return
