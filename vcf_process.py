@@ -50,7 +50,8 @@ def vcf_annot(args):
         #Skip metainformation lines
         if not line.startswith("#"):
             line_split=line.split("\t")
-            #assign values to variables
+            
+            #Assign values to variables
             chrom=line_split[0]
             pos=line_split[1]
             var_id=line_split[2]
@@ -95,7 +96,7 @@ def vcf_annot(args):
                 #Convert data to json format
                 data_json=get_data.json()
 
-                #assign data to variables
+                #Assign data to variables
                 allele_freq=round(data_json["allele_freq"], 6)
                 symbol=data_json["vep_annotations"][0]["SYMBOL"]
                 major_consequence=data_json["vep_annotations"][0]["major_consequence"]
