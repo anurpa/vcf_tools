@@ -1,6 +1,6 @@
 # VCF Annotation Tools
 
-This srepository contains tools for annotating a VCF file. 
+This repository contains tools for annotating a VCF file. 
 Given a VCF file as input to  vcf_process.py, output of annotated VCF file is generated.
 
 More information a VCF file format can be found [here](https://samtools.github.io/hts-specs/VCFv4.2.pdf).
