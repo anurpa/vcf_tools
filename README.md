@@ -31,7 +31,7 @@ python vcf_process.py -h
 Usage example:
 
 ```
-python vcf_process.py -v Challenge_data.vcf -o challenge_data_annotated.txt 
+python vcf_process.py -v data.vcf -o data_annotated_example.txt 
 ```
 
 ## <a name="output">Description of output file</a>
